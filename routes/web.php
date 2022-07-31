@@ -78,23 +78,6 @@ Route::group(['namespace' => 'App\Http\Controllers'], function () {
 			Route::patch('/{user}/update', 'UserController@update')->name('users.update');
 			Route::delete('/{user}/delete', 'UserController@destroy')->name('users.destroy');
 		});
-
-<<<<<<< HEAD
-	
-=======
-		/**
-		 * Invoice Routes
-		 */
-		Route::group(['prefix' => 'invoice'], function () {
-			Route::get('/', 'InvoiceController@index')->name('invoices.index');
-			Route::get('/create', 'InvoiceController@create')->name('invoices.create');
-			Route::post('/create', 'InvoiceController@store')->name('invoices.store');
-			Route::get('/{invoice}/show', 'InvoiceController@show')->name('invoices.show');
-			Route::get('/{invoice}/edit', 'InvoiceController@edit')->name('invoices.edit');
-			Route::patch('/{invoice}/update', 'InvoiceController@update')->name('invoices.update');
-			Route::delete('/{invoice}/delete', 'InvoiceController@destroy')->name('invoices.destroy');
-		});
->>>>>>> cc1095dbe3a557049032bf79e535bc6ad1d13a60
 		Route::resource('roles', RolesController::class);
         Route::resource('permissions', PermissionsController::class);
 
