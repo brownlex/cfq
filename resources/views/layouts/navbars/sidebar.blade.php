@@ -33,7 +33,7 @@
             </li>
             @endrole
             <li class="nav-item{{ $activePage == 'invoices' ? ' active' : '' }}">
-              <a class="nav-link" href="{{ route('invoices.index') }}" >
+              <a class="nav-link" href="" >
                 <i class="material-icons">description</i>
                 <p>{{ __('Invoices') }}</p>
               </a>
