@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="csrf-token" content="<?php echo e(csrf_token()); ?>">
-    <title><?php echo e(__('Invoice System')); ?></title>
+    <title><?php echo e(__('Customer Satisfaction')); ?></title>
     <link rel="apple-touch-icon" sizes="76x76" href="<?php echo e(asset('material')); ?>/img/apple-icon.png">
     <link rel="icon" type="image/png" href="<?php echo e(asset('material')); ?>/img/favicon.png">
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
     <!-- CSS Files -->
     <link href="<?php echo e(asset('material')); ?>/css/material-dashboard.css?v=2.1.1" rel="stylesheet" />
+    <link rel="stylesheet" href="<?php echo e(asset('material')); ?>/css/ckioskboard-2.2.0.min.css" />
     <!-- CSS Just for demo purpose, don't include it in your project -->
     <link href="<?php echo e(asset('material')); ?>/demo/demo.css" rel="stylesheet" />
     </head>
@@ -74,6 +75,7 @@
         <!-- Material Dashboard DEMO methods, don't include it in your project! -->
         <script src="<?php echo e(asset('material')); ?>/demo/demo.js"></script>
         <script src="<?php echo e(asset('material')); ?>/js/settings.js"></script>
+        <script src="<?php echo e(asset('material')); ?>/js/kioskboard-2.2.0.min.js"></script>
         <?php echo $__env->yieldPushContent('js'); ?>
     </body>
 </html><?php /**PATH C:\xampp\htdocs\cfq\resources\views/layouts/app.blade.php ENDPATH**/ ?>

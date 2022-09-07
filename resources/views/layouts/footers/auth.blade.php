@@ -3,9 +3,9 @@
     <nav class="float-left">
       <ul>
         <li>
-          <a href="#">
+       
               {{ __('Invoice System') }}
-          </a>
+         
         </li>
         
       </ul>

@@ -3,9 +3,9 @@
         <nav class="float-left">
         <ul>
             <li>
-            <a href="https://www.creative-tim.com">
-                {{ __('Invoice System') }}
-            </a>
+           
+                {{ __('Customer Satisfaction') }}
+           
             </li>
             <li>
             

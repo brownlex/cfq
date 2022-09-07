@@ -16,12 +16,15 @@ use Illuminate\Support\Facades\Auth;
 
 Route::group(['namespace' => 'App\Http\Controllers'], function () {
 	Route::get('/', function () {
-		return view('auth.login');
+		return view('auth.welcome');
 	});
 
 	Auth::routes();
 	Route::get('/home', 'HomeController@index')->name('home');
-
+	Route::get('/landing', 'LandingController@landing')->name('landing');
+	Route::get('/claim', 'LandingController@index')->name('claim');
+	Route::get('/vistor', 'LandingController@vistor')->name('vistor');
+	Route::get('/feedback', 'LandingController@feedback')->name('feedback');
 	//Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 
