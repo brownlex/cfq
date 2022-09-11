@@ -8,16 +8,16 @@
             </div>
 
         </div>
-        <form method="post" action="{{ route('client.create.step.one') }}" autocomplete="off" class="form-horizontal">
+        <form method="post" action="{{ route('client.create.step.two7') }}" autocomplete="off" class="form-horizontal">
             @csrf
             <div class="container"
                 style="height: auto; background-color:rgb(255, 255, 255);  border-radius: 25px; align: top;">
                 <br>
                 <div class="row">
                     <label class="col-sm-3 col-form-label text-right"
-                        style="color: rgb(0, 0, 0) !important;">{{ __('ID Number:') }}</label>
+                        style="color: rgb(0, 0, 0) !important;">{{ __('Email:') }}</label>
                     <div class="col-sm-3 text-left">
-                        <input type="text" class="use-keyboard-input" style="width: 250px;" name="idNumber">
+                        <input type="text" class="use-keyboard-input" style="width: 250px;" name="email">
                     </div>
                     <div class="col-sm-3 text-center">
                         <button type="submit" class="btn btn-success"> <i class="material-icons">east</i></button>

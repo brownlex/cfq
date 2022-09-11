@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
     <!-- CSS Files -->
     <link href="<?php echo e(asset('material')); ?>/css/material-dashboard.css?v=2.1.1" rel="stylesheet" />
-    <link rel="stylesheet" href="<?php echo e(asset('material')); ?>/css/ckioskboard-2.2.0.min.css" />
+  
     <!-- CSS Just for demo purpose, don't include it in your project -->
     <link href="<?php echo e(asset('material')); ?>/demo/demo.css" rel="stylesheet" />
     </head>
@@ -75,7 +75,6 @@
         <!-- Material Dashboard DEMO methods, don't include it in your project! -->
         <script src="<?php echo e(asset('material')); ?>/demo/demo.js"></script>
         <script src="<?php echo e(asset('material')); ?>/js/settings.js"></script>
-        <script src="<?php echo e(asset('material')); ?>/js/kioskboard-2.2.0.min.js"></script>
         <?php echo $__env->yieldPushContent('js'); ?>
     </body>
 </html><?php /**PATH C:\xampp\htdocs\cfq\resources\views/layouts/app.blade.php ENDPATH**/ ?>

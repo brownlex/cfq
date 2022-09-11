@@ -1,28 +1,31 @@
-@extends('layouts.app', ['class' => 'off-canvas-sidebar', 'activePage' => 'home', 'title' => __('MVA Fund Customer Satisfaction System')])
+@extends('layouts.app2', ['class' => 'off-canvas-sidebar', 'activePage' => 'home', 'title' => __('MVA Fund Customer Satisfaction System')])
 
 @section('content')
     <div class="container" style="height: auto; ">
         <div class="row justify-content-center">
             <div class="col-lg-7 col-md-8">
-                <h1 class="text-white text-center">{{ __('Vistor') }}</h1>
+                <h1 class="text-white text-center " style="color: #fff !important;">{{ __('Vistor') }}</h1>
             </div>
 
         </div>
-        <br>
-
-        <div class="container" style="height: auto; background-color:rgba(188, 233, 254, 0.785);  border-radius: 25px;">
+        <div class="container" style="height: auto; background-color:rgb(255, 255, 255);  border-radius: 25px; align: top;">
             <br>
-            <form class="form-inline">
-                <div class="form-group mb-2">
-                  <label for="staticEmail2" class="sr-only">Email</label>
-                  <input type="text" readonly class="form-control-plaintext" id="staticEmail2" value="email@example.com">
+            <div class="row">
+                <label class="col-sm-3 col-form-label text-right" style="color: rgb(0, 0, 0) !important;">{{ __('ID Number:') }}</label>
+                <div class="col-sm-3 text-left">
+                    <input type="text" class="use-keyboard-input" style="width: 250px;">
                 </div>
-                <div class="form-group mx-sm-3 mb-2">
-                  <label for="inputPassword2" class="sr-only">Password</label>
-                  <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
+                <div class="col-sm-3 text-center">
+                    <button type="submit" class="btn btn-success"> <i class="material-icons">east</i></button>
                 </div>
-                <button type="submit" class="btn btn-primary mb-2">Confirm identity</button>
-              </form>
+                <div class="col-sm-3 text-center">
+                    <a href="{{ route('landing') }}" class="btn btn-default"><i class="material-icons">undo</i></a>
+                </div>
+            </div>
+            <br>
+
+
         </div>
+
     </div>
 @endsection

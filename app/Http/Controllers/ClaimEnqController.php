@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+
 class ClaimEnqController extends Controller
 {
     /**
@@ -81,4 +82,7 @@ class ClaimEnqController extends Controller
     {
         //
     }
+
+
+    
 }

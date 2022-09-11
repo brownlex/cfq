@@ -23,6 +23,8 @@ Route::group(['namespace' => 'App\Http\Controllers'], function () {
 	Route::get('/home', 'HomeController@index')->name('home');
 	Route::get('/landing', 'LandingController@landing')->name('landing');
 	Route::get('/claim', 'LandingController@index')->name('claim');
+	Route::post('/client/create-step-one', 'LandingController@createStepOne')->name('client.create.step.one');
+	Route::post('/client/create-step-two', 'LandingController@createStepTwo')->name('client.create.step.two');
 	Route::get('/vistor', 'LandingController@vistor')->name('vistor');
 	Route::get('/feedback', 'LandingController@feedback')->name('feedback');
 	//Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

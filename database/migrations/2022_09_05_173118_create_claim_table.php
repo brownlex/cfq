@@ -15,6 +15,15 @@ return new class extends Migration
     {
         Schema::create('claim', function (Blueprint $table) {
             $table->id();
+            $table->string('type');
+            $table->integer('client');
+            $table->string('agent')->nullable();
+            $table->string('callStatus')->nullable();
+            $table->dateTime('inQueue')->nullable();
+            $table->dateTime('withAgent')->nullable();
+            $table->string('hinQueue')->nullable();
+            $table->string('hwithAgent')->nullable();
+            $table->string('addCo')->nullable();
             $table->timestamps();
         });
     }

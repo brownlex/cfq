@@ -15,6 +15,10 @@ return new class extends Migration
     {
         Schema::create('feedback', function (Blueprint $table) {
             $table->id();
+            $table->integer('ticketNum')->unique();
+            $table->string('score');
+            $table->string('reason')->nullable();
+            $table->string('addCo')->nullable();
             $table->timestamps();
         });
     }
