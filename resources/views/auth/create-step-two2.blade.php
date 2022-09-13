@@ -4,7 +4,8 @@
     <div class="container" style="height: auto; ">
         <div class="row justify-content-center">
             <div class="col-lg-7 col-md-8">
-                <h1 class="text-white text-center " style="color: #fff !important;">{{ __('Claim') }}</h1>
+                <h1 class="text-white text-center " style="color: #fff !important;"><i
+                    class="material-icons">looks_4</i>{{ __(' Enter Your Cellphone:') }}</h1>
             </div>
 
         </div>
@@ -15,9 +16,16 @@
                 <br>
                 <div class="row">
                     <label class="col-sm-3 col-form-label text-right"
-                        style="color: rgb(0, 0, 0) !important;">{{ __('Cellphone:') }}</label>
+                        style="color: rgb(0, 0, 0) !important;"><h3>{{ __('Cellphone:') }}</h3></label>
                     <div class="col-sm-3 text-left">
-                        <input type="text" class="use-keyboard-input" style="width: 250px;" name="cellphone">
+                    <h3><input type="number" class="use-keyboard-input{{ $errors->has('cellphone') ? ' is-invalid' : '' }}"
+                        style="width: 255px; border: 1px solid #d2d2d2; border-top: hidden; border-right: hidden; border-left: hidden"
+                         id="cellphone"  name="cellphone" required></h3>
+
+                         @if ($errors->has('cellphone'))
+                         <span id="cellphone-error" class="error text-danger"
+                             for="cellphone">{{ $errors->first('cellphone') }}</span>
+                     @endif
                     </div>
                     <div class="col-sm-3 text-center">
                         <button type="submit" class="btn btn-success"> <i class="material-icons">east</i></button>

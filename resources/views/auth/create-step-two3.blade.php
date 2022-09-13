@@ -4,7 +4,7 @@
     <div class="container" style="height: auto; ">
         <div class="row justify-content-center">
             <div class="col-lg-7 col-md-8">
-                <h1 class="text-white text-center " style="color: #fff !important;">{{ __('Claim') }}</h1>
+                <h1 class="text-white text-center " style="color: #fff !important;">{{ __('Enter Your Email Address') }}</h1>
             </div>
 
         </div>
@@ -15,15 +15,21 @@
                 <br>
                 <div class="row">
                     <label class="col-sm-3 col-form-label text-right"
-                        style="color: rgb(0, 0, 0) !important;">{{ __('Email:') }}</label>
+                        style="color: rgb(0, 0, 0) !important;"><h3>{{ __('Email:') }}</h3></label>
                     <div class="col-sm-3 text-left">
-                        <input type="text" class="use-keyboard-input" style="width: 250px;" name="email">
+                    <h3><input type="text" class="use-keyboard-input{{ $errors->has('idNumber') ? ' is-invalid' : '' }}"
+                        style="width: 255px; border: 1px solid #d2d2d2; border-top: hidden; border-right: hidden; border-left: hidden"
+                        id="email" name="email"></h3>
+                        @if ($errors->has('email'))
+                        <span id="email-error" class="error text-danger"
+                            for="email">{{ $errors->first('email') }}</span>
+                    @endif
                     </div>
                     <div class="col-sm-3 text-center">
-                        <button type="submit" class="btn btn-success"> <i class="material-icons">east</i></button>
+                        <button type="submit" class="btn btn-success "> <i class="material-icons">east</i></button>
                     </div>
                     <div class="col-sm-3 text-center">
-                        <a href="{{ route('landing') }}" class="btn btn-default"><i class="material-icons">undo</i></a>
+                        <a href="{{ route('landing') }}" class="btn btn-default "><i class="material-icons">undo</i></a>
                     </div>
                 </div>
                 <br>

@@ -17,8 +17,8 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->string('surname');
-            $table->integer('idNumber')->unique();
-            $table->string('cellphone')->unique();
+            $table->bigInteger('idNumber')->unique();
+            $table->bigInteger('cellphone')->unique();
             $table->string('email')->nullable();
             $table->string('addCo')->nullable();
             $table->timestamps();

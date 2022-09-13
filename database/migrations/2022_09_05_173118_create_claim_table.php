@@ -16,7 +16,7 @@ return new class extends Migration
         Schema::create('claim', function (Blueprint $table) {
             $table->id();
             $table->string('type');
-            $table->integer('client');
+            $table->bigInteger('client');
             $table->string('agent')->nullable();
             $table->string('callStatus')->nullable();
             $table->dateTime('inQueue')->nullable();

@@ -8,4 +8,12 @@ use Illuminate\Database\Eloquent\Model;
 class ClaimEnq extends Model
 {
     use HasFactory;
+
+    protected $table = 'claim';
+
+    protected $fillable = [
+        'type',
+        'client',
+        'inQueue'
+    ];
 }

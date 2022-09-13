@@ -24,7 +24,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::HOEZUVlUpsUoi5nn',
+            '_route' => 'generated::27jniZT3hECqljof',
           ),
           1 => NULL,
           2 => 
@@ -102,7 +102,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::NfOAAivMp3jPM2sA',
+            '_route' => 'generated::H8Etd6iZylkwUH5L',
           ),
           1 => NULL,
           2 => 
@@ -122,7 +122,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::NXwXSKAtv1Qo1jpZ',
+            '_route' => 'generated::S1sGh67HzPWlRW6C',
           ),
           1 => NULL,
           2 => 
@@ -159,7 +159,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::jN0c1cBwj2VgM70M',
+            '_route' => 'generated::yGrRXRmb2G8hNQX5',
           ),
           1 => NULL,
           2 => 
@@ -194,7 +194,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::aTprzjFGKQpxfoIy',
+            '_route' => 'generated::6ryO8dzyI54ncKVv',
           ),
           1 => NULL,
           2 => 
@@ -231,7 +231,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::M5C76dEidEEIzQle',
+            '_route' => 'generated::6bTmNUBOP1gNuawV',
           ),
           1 => NULL,
           2 => 
@@ -322,7 +322,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::JMsJ2RcWz0FSuVOu',
+            '_route' => 'generated::vCzxYRNmcmonocWK',
           ),
           1 => NULL,
           2 => 
@@ -395,6 +395,221 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
+      '/client/create-step-one' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'client.create.step.one',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'POST' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/client/create-step-three' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'client.create.step.three',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/client/create-step-two' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'client.create.step.two',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/client/create-step-two1' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'client.create.step.two1',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'POST' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/client/create-step-two2' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'client.create.step.two2',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/client/create-step-two3' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'client.create.step.two3',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'POST' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/client/create-step-two4' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'client.create.step.two4',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/client/create-step-two5' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'client.create.step.two5',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'POST' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/client/create-step-two6' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'client.create.step.two6',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/client/create-step-two7' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'client.create.step.two7',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'POST' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/client/create-step-two8' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'client.create.step.two8',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
       '/vistor' => 
       array (
         0 => 
@@ -422,6 +637,201 @@ app('router')->setCompiledRoutes(
           0 => 
           array (
             '_route' => 'feedback',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/feedback/create-step-one' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'feedback.create.step.one',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'POST' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/vistor/create-step-one' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'vistor.create.step.one',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'POST' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/vistor/create-step-three' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'vistor.create.step.three',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/vistor/create-step-two' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'vistor.create.step.two',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/vistor/create-step-two1' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'vistor.create.step.two1',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'POST' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/vistor/create-step-two2' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'vistor.create.step.two2',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/vistor/create-step-two3' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'vistor.create.step.two3',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'POST' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/vistor/create-step-two4' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'vistor.create.step.two4',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/vistor/create-step-two5' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'vistor.create.step.two5',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'POST' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/vistor/create-step-two6' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'vistor.create.step.two6',
           ),
           1 => NULL,
           2 => 
@@ -1230,7 +1640,7 @@ app('router')->setCompiledRoutes(
   ),
   'attributes' => 
   array (
-    'generated::HOEZUVlUpsUoi5nn' => 
+    'generated::27jniZT3hECqljof' => 
     array (
       'methods' => 
       array (
@@ -1251,7 +1661,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 'web',
         ),
-        'as' => 'generated::HOEZUVlUpsUoi5nn',
+        'as' => 'generated::27jniZT3hECqljof',
       ),
       'fallback' => false,
       'defaults' => 
@@ -1376,7 +1786,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::NfOAAivMp3jPM2sA' => 
+    'generated::H8Etd6iZylkwUH5L' => 
     array (
       'methods' => 
       array (
@@ -1399,7 +1809,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::NfOAAivMp3jPM2sA',
+        'as' => 'generated::H8Etd6iZylkwUH5L',
       ),
       'fallback' => false,
       'defaults' => 
@@ -1415,7 +1825,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::NXwXSKAtv1Qo1jpZ' => 
+    'generated::S1sGh67HzPWlRW6C' => 
     array (
       'methods' => 
       array (
@@ -1437,7 +1847,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::NXwXSKAtv1Qo1jpZ',
+        'as' => 'generated::S1sGh67HzPWlRW6C',
       ),
       'fallback' => false,
       'defaults' => 
@@ -1490,7 +1900,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::jN0c1cBwj2VgM70M' => 
+    'generated::yGrRXRmb2G8hNQX5' => 
     array (
       'methods' => 
       array (
@@ -1510,7 +1920,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::jN0c1cBwj2VgM70M',
+        'as' => 'generated::yGrRXRmb2G8hNQX5',
       ),
       'fallback' => false,
       'defaults' => 
@@ -1599,7 +2009,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::M5C76dEidEEIzQle' => 
+    'generated::6bTmNUBOP1gNuawV' => 
     array (
       'methods' => 
       array (
@@ -1619,7 +2029,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::M5C76dEidEEIzQle',
+        'as' => 'generated::6bTmNUBOP1gNuawV',
       ),
       'fallback' => false,
       'defaults' => 
@@ -1818,7 +2228,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::JMsJ2RcWz0FSuVOu' => 
+    'generated::vCzxYRNmcmonocWK' => 
     array (
       'methods' => 
       array (
@@ -1838,7 +2248,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::JMsJ2RcWz0FSuVOu',
+        'as' => 'generated::vCzxYRNmcmonocWK',
       ),
       'fallback' => false,
       'defaults' => 
@@ -1965,6 +2375,408 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
+    'client.create.step.one' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'POST',
+      ),
+      'uri' => 'client/create-step-one',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\LandingController@createStepOne',
+        'controller' => 'App\\Http\\Controllers\\LandingController@createStepOne',
+        'namespace' => 'App\\Http\\Controllers',
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+        'as' => 'client.create.step.one',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'client.create.step.three' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'client/create-step-three',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\LandingController@createStepThree',
+        'controller' => 'App\\Http\\Controllers\\LandingController@createStepThree',
+        'namespace' => 'App\\Http\\Controllers',
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+        'as' => 'client.create.step.three',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'client.create.step.two' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'client/create-step-two',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\LandingController@createStepTwo',
+        'controller' => 'App\\Http\\Controllers\\LandingController@createStepTwo',
+        'namespace' => 'App\\Http\\Controllers',
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+        'as' => 'client.create.step.two',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'client.create.step.two1' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'POST',
+      ),
+      'uri' => 'client/create-step-two1',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\LandingController@createStepTwo1',
+        'controller' => 'App\\Http\\Controllers\\LandingController@createStepTwo1',
+        'namespace' => 'App\\Http\\Controllers',
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+        'as' => 'client.create.step.two1',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'client.create.step.two2' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'client/create-step-two2',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\LandingController@createStepTwo2',
+        'controller' => 'App\\Http\\Controllers\\LandingController@createStepTwo2',
+        'namespace' => 'App\\Http\\Controllers',
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+        'as' => 'client.create.step.two2',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'client.create.step.two3' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'POST',
+      ),
+      'uri' => 'client/create-step-two3',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\LandingController@createStepTwo3',
+        'controller' => 'App\\Http\\Controllers\\LandingController@createStepTwo3',
+        'namespace' => 'App\\Http\\Controllers',
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+        'as' => 'client.create.step.two3',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'client.create.step.two4' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'client/create-step-two4',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\LandingController@createStepTwo4',
+        'controller' => 'App\\Http\\Controllers\\LandingController@createStepTwo4',
+        'namespace' => 'App\\Http\\Controllers',
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+        'as' => 'client.create.step.two4',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'client.create.step.two5' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'POST',
+      ),
+      'uri' => 'client/create-step-two5',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\LandingController@createStepTwo5',
+        'controller' => 'App\\Http\\Controllers\\LandingController@createStepTwo5',
+        'namespace' => 'App\\Http\\Controllers',
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+        'as' => 'client.create.step.two5',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'client.create.step.two6' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'client/create-step-two6',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\LandingController@createStepTwo6',
+        'controller' => 'App\\Http\\Controllers\\LandingController@createStepTwo6',
+        'namespace' => 'App\\Http\\Controllers',
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+        'as' => 'client.create.step.two6',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'client.create.step.two7' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'POST',
+      ),
+      'uri' => 'client/create-step-two7',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\LandingController@createStepTwo7',
+        'controller' => 'App\\Http\\Controllers\\LandingController@createStepTwo7',
+        'namespace' => 'App\\Http\\Controllers',
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+        'as' => 'client.create.step.two7',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'client.create.step.two8' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'client/create-step-two8',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\LandingController@createStepTwo8',
+        'controller' => 'App\\Http\\Controllers\\LandingController@createStepTwo8',
+        'namespace' => 'App\\Http\\Controllers',
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+        'as' => 'client.create.step.two8',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
     'vistor' => 
     array (
       'methods' => 
@@ -2039,6 +2851,371 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
+    'feedback.create.step.one' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'POST',
+      ),
+      'uri' => 'feedback/create-step-one',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\LandingController@createStepOnef',
+        'controller' => 'App\\Http\\Controllers\\LandingController@createStepOnef',
+        'namespace' => 'App\\Http\\Controllers',
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+        'as' => 'feedback.create.step.one',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'vistor.create.step.one' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'POST',
+      ),
+      'uri' => 'vistor/create-step-one',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\LandingController@createStepOnev',
+        'controller' => 'App\\Http\\Controllers\\LandingController@createStepOnev',
+        'namespace' => 'App\\Http\\Controllers',
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+        'as' => 'vistor.create.step.one',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'vistor.create.step.three' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'vistor/create-step-three',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\LandingController@createStepThreev',
+        'controller' => 'App\\Http\\Controllers\\LandingController@createStepThreev',
+        'namespace' => 'App\\Http\\Controllers',
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+        'as' => 'vistor.create.step.three',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'vistor.create.step.two' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'vistor/create-step-two',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\LandingController@createStepTwov',
+        'controller' => 'App\\Http\\Controllers\\LandingController@createStepTwov',
+        'namespace' => 'App\\Http\\Controllers',
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+        'as' => 'vistor.create.step.two',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'vistor.create.step.two1' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'POST',
+      ),
+      'uri' => 'vistor/create-step-two1',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\LandingController@createStepTwo1v',
+        'controller' => 'App\\Http\\Controllers\\LandingController@createStepTwo1v',
+        'namespace' => 'App\\Http\\Controllers',
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+        'as' => 'vistor.create.step.two1',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'vistor.create.step.two2' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'vistor/create-step-two2',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\LandingController@createStepTwo2v',
+        'controller' => 'App\\Http\\Controllers\\LandingController@createStepTwo2v',
+        'namespace' => 'App\\Http\\Controllers',
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+        'as' => 'vistor.create.step.two2',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'vistor.create.step.two3' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'POST',
+      ),
+      'uri' => 'vistor/create-step-two3',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\LandingController@createStepTwo3v',
+        'controller' => 'App\\Http\\Controllers\\LandingController@createStepTwo3v',
+        'namespace' => 'App\\Http\\Controllers',
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+        'as' => 'vistor.create.step.two3',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'vistor.create.step.two4' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'vistor/create-step-two4',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\LandingController@createStepTwo4v',
+        'controller' => 'App\\Http\\Controllers\\LandingController@createStepTwo4v',
+        'namespace' => 'App\\Http\\Controllers',
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+        'as' => 'vistor.create.step.two4',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'vistor.create.step.two5' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'POST',
+      ),
+      'uri' => 'vistor/create-step-two5',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\LandingController@createStepTwo5v',
+        'controller' => 'App\\Http\\Controllers\\LandingController@createStepTwo5v',
+        'namespace' => 'App\\Http\\Controllers',
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+        'as' => 'vistor.create.step.two5',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'vistor.create.step.two6' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'vistor/create-step-two6',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\LandingController@createStepTwo6v',
+        'controller' => 'App\\Http\\Controllers\\LandingController@createStepTwo6v',
+        'namespace' => 'App\\Http\\Controllers',
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+        'as' => 'vistor.create.step.two6',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
     'table' => 
     array (
       'methods' => 
@@ -2057,7 +3234,7 @@ app('router')->setCompiledRoutes(
         ),
         'uses' => 'O:47:"Laravel\\SerializableClosure\\SerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Signed":2:{s:12:"serializable";s:274:"O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:0:{}s:8:"function";s:56:"function () {
 			return \\view(\'pages.table_list\');
-		}";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"00000000000004a60000000000000000";}";s:4:"hash";s:44:"TAJlmuK0zkuEouJG+irmXhlpziBDQypO2j+F27ab4qE=";}}',
+		}";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"00000000000004bb0000000000000000";}";s:4:"hash";s:44:"uNdsSUGkaswQJPOUgIW/3+8IB28eNNPXBs7kv8l8Bxo=";}}',
         'namespace' => 'App\\Http\\Controllers',
         'prefix' => '',
         'where' => 
@@ -2097,7 +3274,7 @@ app('router')->setCompiledRoutes(
         ),
         'uses' => 'O:47:"Laravel\\SerializableClosure\\SerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Signed":2:{s:12:"serializable";s:274:"O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:0:{}s:8:"function";s:56:"function () {
 			return \\view(\'pages.typography\');
-		}";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"00000000000004a80000000000000000";}";s:4:"hash";s:44:"ls0RQ5t6CwbOfxr6W6M9oNNtzmt883Pm0TTcneg7xPc=";}}',
+		}";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"00000000000004bd0000000000000000";}";s:4:"hash";s:44:"877pmt4EfqYlhvA9nIHEGhMREa1ocZCYGXH1ZVTL2R0=";}}',
         'namespace' => 'App\\Http\\Controllers',
         'prefix' => '',
         'where' => 
@@ -2137,7 +3314,7 @@ app('router')->setCompiledRoutes(
         ),
         'uses' => 'O:47:"Laravel\\SerializableClosure\\SerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Signed":2:{s:12:"serializable";s:269:"O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:0:{}s:8:"function";s:51:"function () {
 			return \\view(\'pages.icons\');
-		}";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"00000000000004aa0000000000000000";}";s:4:"hash";s:44:"6EzjFOIoHVS7yMIV/KWYT2mx5xGKuQx8NOLiBdykEAE=";}}',
+		}";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"00000000000004bf0000000000000000";}";s:4:"hash";s:44:"a60xtZTrdJsN0lhEF5gGuqFT/dUQO7bNHyYmRwzebWc=";}}',
         'namespace' => 'App\\Http\\Controllers',
         'prefix' => '',
         'where' => 
@@ -2177,7 +3354,7 @@ app('router')->setCompiledRoutes(
         ),
         'uses' => 'O:47:"Laravel\\SerializableClosure\\SerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Signed":2:{s:12:"serializable";s:267:"O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:0:{}s:8:"function";s:49:"function () {
 			return \\view(\'pages.map\');
-		}";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"00000000000004ac0000000000000000";}";s:4:"hash";s:44:"Elt0OQsE9YYzUMiqe/crMPcbTnSCd+2Rav1gHnXDu5Y=";}}',
+		}";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"00000000000004c10000000000000000";}";s:4:"hash";s:44:"c+7bR43Sq+1apSAplgl/Nh00x+FTbk+KS0e0SPPCp0A=";}}',
         'namespace' => 'App\\Http\\Controllers',
         'prefix' => '',
         'where' => 
@@ -2217,7 +3394,7 @@ app('router')->setCompiledRoutes(
         ),
         'uses' => 'O:47:"Laravel\\SerializableClosure\\SerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Signed":2:{s:12:"serializable";s:277:"O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:0:{}s:8:"function";s:59:"function () {
 			return \\view(\'pages.notifications\');
-		}";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"00000000000004ae0000000000000000";}";s:4:"hash";s:44:"a0ARQ68+hQTAHHpUEqZrMXHnvoGNbjbsvDy59gqsBdc=";}}',
+		}";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"00000000000004c30000000000000000";}";s:4:"hash";s:44:"r/oe8G2LK4wW9JYLNWfmvdggY3MgXwdU4RQCD2Lv0g8=";}}',
         'namespace' => 'App\\Http\\Controllers',
         'prefix' => '',
         'where' => 
@@ -2257,7 +3434,7 @@ app('router')->setCompiledRoutes(
         ),
         'uses' => 'O:47:"Laravel\\SerializableClosure\\SerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Signed":2:{s:12:"serializable";s:272:"O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:0:{}s:8:"function";s:54:"function () {
 			return \\view(\'pages.language\');
-		}";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"00000000000004b00000000000000000";}";s:4:"hash";s:44:"a2mOH6HDAtl1zomkw2IpSlilOCexytE8bGwlxEzZVZg=";}}',
+		}";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"00000000000004c50000000000000000";}";s:4:"hash";s:44:"za79YkGuAXuW36jIpwVL9G85lFxSKSEjoGGfZ8AQW2U=";}}',
         'namespace' => 'App\\Http\\Controllers',
         'prefix' => '',
         'where' => 
@@ -2297,7 +3474,7 @@ app('router')->setCompiledRoutes(
         ),
         'uses' => 'O:47:"Laravel\\SerializableClosure\\SerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Signed":2:{s:12:"serializable";s:271:"O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:0:{}s:8:"function";s:53:"function () {
 			return \\view(\'pages.upgrade\');
-		}";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"00000000000004b20000000000000000";}";s:4:"hash";s:44:"WeLz6h2Y+zK1jzPTi6tI0vwnnhVlJZzR2ImfDT4cevs=";}}',
+		}";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"00000000000004c70000000000000000";}";s:4:"hash";s:44:"WadL9k2YnSbl+T0w5Mfy9YXBnS1UXB0DCOyBBraBaz8=";}}',
         'namespace' => 'App\\Http\\Controllers',
         'prefix' => '',
         'where' => 
@@ -2551,7 +3728,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::aTprzjFGKQpxfoIy' => 
+    'generated::6ryO8dzyI54ncKVv' => 
     array (
       'methods' => 
       array (
@@ -2574,7 +3751,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::aTprzjFGKQpxfoIy',
+        'as' => 'generated::6ryO8dzyI54ncKVv',
       ),
       'fallback' => false,
       'defaults' => 

@@ -24,9 +24,32 @@ Route::group(['namespace' => 'App\Http\Controllers'], function () {
 	Route::get('/landing', 'LandingController@landing')->name('landing');
 	Route::get('/claim', 'LandingController@index')->name('claim');
 	Route::post('/client/create-step-one', 'LandingController@createStepOne')->name('client.create.step.one');
-	Route::post('/client/create-step-two', 'LandingController@createStepTwo')->name('client.create.step.two');
+	Route::get('/client/create-step-three', 'LandingController@createStepThree')->name('client.create.step.three');
+	Route::get('/client/create-step-two', 'LandingController@createStepTwo')->name('client.create.step.two');
+	Route::post('/client/create-step-two1', 'LandingController@createStepTwo1')->name('client.create.step.two1');
+	Route::get('/client/create-step-two2', 'LandingController@createStepTwo2')->name('client.create.step.two2');
+	Route::post('/client/create-step-two3', 'LandingController@createStepTwo3')->name('client.create.step.two3');
+	Route::get('/client/create-step-two4', 'LandingController@createStepTwo4')->name('client.create.step.two4');
+	Route::post('/client/create-step-two5', 'LandingController@createStepTwo5')->name('client.create.step.two5');
+	Route::get('/client/create-step-two6', 'LandingController@createStepTwo6')->name('client.create.step.two6');
+	Route::post('/client/create-step-two7', 'LandingController@createStepTwo7')->name('client.create.step.two7');
+	Route::get('/client/create-step-two8', 'LandingController@createStepTwo8')->name('client.create.step.two8');
+	Route::get('/client/create-step-three', 'LandingController@createStepThree')->name('client.create.step.three');
 	Route::get('/vistor', 'LandingController@vistor')->name('vistor');
 	Route::get('/feedback', 'LandingController@feedback')->name('feedback');
+
+	Route::post('/feedback/create-step-one', 'LandingController@createStepOnef')->name('feedback.create.step.one');
+
+	Route::post('/vistor/create-step-one', 'LandingController@createStepOnev')->name('vistor.create.step.one');
+	Route::get('/vistor/create-step-three', 'LandingController@createStepThreev')->name('vistor.create.step.three');
+	Route::get('/vistor/create-step-two', 'LandingController@createStepTwov')->name('vistor.create.step.two');
+	Route::post('/vistor/create-step-two1', 'LandingController@createStepTwo1v')->name('vistor.create.step.two1');
+	Route::get('/vistor/create-step-two2', 'LandingController@createStepTwo2v')->name('vistor.create.step.two2');
+	Route::post('/vistor/create-step-two3', 'LandingController@createStepTwo3v')->name('vistor.create.step.two3');
+	Route::get('/vistor/create-step-two4', 'LandingController@createStepTwo4v')->name('vistor.create.step.two4');
+	Route::post('/vistor/create-step-two5', 'LandingController@createStepTwo5v')->name('vistor.create.step.two5');
+	Route::get('/vistor/create-step-two6', 'LandingController@createStepTwo6v')->name('vistor.create.step.two6');
+	
 	//Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 
