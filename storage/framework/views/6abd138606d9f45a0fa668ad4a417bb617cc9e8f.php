@@ -15,11 +15,11 @@
                 <br>
                 <div class="row">
                     <label class="col-sm-3 col-form-label text-right"
-                        style="color: rgb(0, 0, 0) !important;"><?php echo e(__('Email:')); ?></label>
+                        style="color: rgb(0, 0, 0) !important;"><h3><?php echo e(__('Email:')); ?></h3></label>
                     <div class="col-sm-3 text-left">
-                        <input type="text" class="use-keyboard-input<?php echo e($errors->has('idNumber') ? ' is-invalid' : ''); ?>"
+                    <h3><input type="text" class="use-keyboard-input<?php echo e($errors->has('idNumber') ? ' is-invalid' : ''); ?>"
                         style="width: 255px; border: 1px solid #d2d2d2; border-top: hidden; border-right: hidden; border-left: hidden"
-                        id="email" name="email">
+                        id="email" name="email"></h3>
                         <?php if($errors->has('email')): ?>
                         <span id="email-error" class="error text-danger"
                             for="email"><?php echo e($errors->first('email')); ?></span>

@@ -9,7 +9,9 @@
 
         </div>
         <br>
-
+        @if(!empty($successMsg))
+        <div class="alert alert-success"> {{ $successMsg }}</div>
+      @endif
         <div class="container" style="height: auto; background-color:rgba(113, 255, 123, 0.6);  border-radius: 25px;">
             <br>
             <br>

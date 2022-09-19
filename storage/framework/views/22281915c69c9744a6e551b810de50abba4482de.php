@@ -9,7 +9,9 @@
 
         </div>
         <br>
-
+        <?php if(!empty($successMsg)): ?>
+        <div class="alert alert-success"> <?php echo e($successMsg); ?></div>
+      <?php endif; ?>
         <div class="container" style="height: auto; background-color:rgba(113, 255, 123, 0.6);  border-radius: 25px;">
             <br>
             <br>

@@ -1,4 +1,4 @@
-@extends('layouts.app', ['class' => 'off-canvas-sidebar', 'activePage' => 'login', 'title' => __('MVA Fund Invoice System')])
+@extends('layouts.app', ['class' => 'off-canvas-sidebar', 'activePage' => 'login', 'title' => __('MVA Fund Customer Satisfaction System')])
 
 @section('content')
 <div class="container" style="height: auto;">

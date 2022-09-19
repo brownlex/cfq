@@ -14,6 +14,7 @@ class Client extends Model
         'name',
         'surname',
         'idNumber',
-        'cellphone'
+        'cellphone',
+        'addCo'
     ];
 }

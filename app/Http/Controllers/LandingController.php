@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use App\Models\Client;
 use App\Models\ClaimEnq;
+use App\Transformers\ClaimTransformer;
 
 class LandingController extends Controller
 {
@@ -19,6 +20,33 @@ class LandingController extends Controller
         return view('auth.claim');
     }
 
+    public function  queue()
+    {
+        // return view('auth.table_list');
+
+        $claim = DB::table('claim')
+            ->where('type', 'like', 'claim')
+            ->where('callStatus', 'like', 'new')->get();
+        $med = DB::table('claim')
+            ->where('type', 'like', 'med')
+            ->where('callStatus', 'like', 'new')->get();
+        $enq = DB::table('claim')
+            ->where('type', 'like', 'enq')
+            ->where('callStatus', 'like', 'new')->get();
+
+        //return fractal($activities, new ClaimTransformer())->respond();
+
+        return view('auth.table_list', ['claim' => $claim, 'med' => $med, 'enq' => $enq]);
+
+        //return ClaimEnq::all(['id', 'type']);
+    }
+
+    public function  queueE()
+    {
+        //return view('auth.table_list');
+
+        return ClaimEnq::all(['id', 'type']);
+    }
     public function landing()
     {
         return view('auth.welcome');
@@ -159,10 +187,9 @@ class LandingController extends Controller
             'id.exsits' => 'Ticket Number does not exsit'
         ]);
 
-            $id = $request->get('id');
-            $request->session()->put('id', $id);
-            return view('auth.rating', compact('id'));
-        
+        $id = $request->get('id');
+        $request->session()->put('id', $id);
+        return view('auth.rating', compact('id'));
     }
 
     public function createStepTwo(Request $request)
@@ -186,11 +213,11 @@ class LandingController extends Controller
             'name.required' => 'Name is required'
         ]);
 
-          //Continue from here
-          $client = $request->session()->get('client');
-          $client->fill($validatedData);
-          $request->session()->put('client', $client);
-          return redirect()->route('client.create.step.two2');
+        //Continue from here
+        $client = $request->session()->get('client');
+        $client->fill($validatedData);
+        $request->session()->put('client', $client);
+        return redirect()->route('client.create.step.two2');
     }
 
     public function createStepTwo1v(Request $request)
@@ -202,11 +229,11 @@ class LandingController extends Controller
             'name.required' => 'Name is required'
         ]);
 
-          //Continue from here
-          $vistor = $request->session()->get('vistor');
-          $vistor->fill($validatedData);
-          $request->session()->put('vistor', $vistor);
-          return redirect()->route('vistor.create.step.two2');
+        //Continue from here
+        $vistor = $request->session()->get('vistor');
+        $vistor->fill($validatedData);
+        $request->session()->put('vistor', $vistor);
+        return redirect()->route('vistor.create.step.two2');
     }
 
 
@@ -231,11 +258,11 @@ class LandingController extends Controller
             'surname.required' => 'Last Name is required'
         ]);
 
-          //Continue from here
-          $client = $request->session()->get('client');
-          $client->fill($validatedData);
-          $request->session()->put('client', $client);
-          return redirect()->route('client.create.step.two4');
+        //Continue from here
+        $client = $request->session()->get('client');
+        $client->fill($validatedData);
+        $request->session()->put('client', $client);
+        return redirect()->route('client.create.step.two4');
     }
 
     public function createStepTwo3v(Request $request)
@@ -247,11 +274,11 @@ class LandingController extends Controller
             'surname.required' => 'Last Name is required'
         ]);
 
-          //Continue from here
-          $vistor = $request->session()->get('vistor');
-          $vistor->fill($validatedData);
-          $request->session()->put('vistor', $vistor);
-          return redirect()->route('vistor.create.step.two4');
+        //Continue from here
+        $vistor = $request->session()->get('vistor');
+        $vistor->fill($validatedData);
+        $request->session()->put('vistor', $vistor);
+        return redirect()->route('vistor.create.step.two4');
     }
 
 
@@ -277,11 +304,11 @@ class LandingController extends Controller
             'cellphone.unique' => 'Cellphone is not unique'
         ]);
 
-          //Continue from here
-          $client = $request->session()->get('client');
-          $client->fill($validatedData);
-          $request->session()->put('client', $client);
-          return redirect()->route('client.create.step.two6');
+        //Continue from here
+        $client = $request->session()->get('client');
+        $client->fill($validatedData);
+        $request->session()->put('client', $client);
+        return redirect()->route('client.create.step.two6');
     }
 
     public function createStepTwo5v(Request $request)
@@ -294,11 +321,11 @@ class LandingController extends Controller
             'cellphone.unique' => 'Cellphone is not unique'
         ]);
 
-          //Continue from here
-          $vistor = $request->session()->get('vistor');
-          $vistor->fill($validatedData);
-          $request->session()->put('vistor', $vistor);
-          return redirect()->route('vistor.create.step.two6');
+        //Continue from here
+        $vistor = $request->session()->get('vistor');
+        $vistor->fill($validatedData);
+        $request->session()->put('vistor', $vistor);
+        return redirect()->route('vistor.create.step.two6');
     }
 
     public function createStepTwo6(Request $request)
@@ -310,26 +337,28 @@ class LandingController extends Controller
     public function createStepTwo6v(Request $request)
     {
         $vistor = $request->session()->get('vistor');
-        $vistor ->save();
+        $vistor->addCo = $vistor->name.' '.$vistor->surname;
+        $vistor->save();
         return view('auth.visting', compact('vistor'));
     }
 
     public function createStepTwo7(Request $request)
     {
-        
-          //Continue from here
-          $client = $request->session()->get('client');
-          $client ->email = $request->get('email');
-          $client ->save();
-          $request->session()->put('client', $client);
-          return redirect()->route('client.create.step.two8');
+
+        //Continue from here
+        $client = $request->session()->get('client');
+        $client->email = $request->get('email');
+        $client->addCo = $client->name.' '.$client->surname;
+        $client->save();
+        $request->session()->put('client', $client);
+        return redirect()->route('client.create.step.two8');
     }
 
     public function createStepTwo8(Request $request)
     {
-        
-          //Continue from here
-          $client = $request->session()->get('client');
+
+        //Continue from here
+        $client = $request->session()->get('client');
         return view('auth.service', compact('client'));
     }
 
@@ -337,17 +366,17 @@ class LandingController extends Controller
 
     public function createStepThree(Request $request)
     {
-       $client =  Client::select()
-           ->where('idNumber', '=', $request->session()->get('idNumber'))
-         ->first();
+        $client =  Client::select()
+            ->where('idNumber', '=', $request->session()->get('idNumber'))
+            ->first();
         return view('auth.service', compact('client'));
     }
 
     public function createStepThreev(Request $request)
     {
-       $vistor =  Client::select()
-           ->where('idNumber', '=', $request->session()->get('idNumber'))
-         ->first();
+        $vistor =  Client::select()
+            ->where('idNumber', '=', $request->session()->get('idNumber'))
+            ->first();
         return view('auth.visting', compact('vistor'));
     }
 }

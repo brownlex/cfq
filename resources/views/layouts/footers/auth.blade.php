@@ -4,7 +4,7 @@
       <ul>
         <li>
        
-              {{ __('Invoice System') }}
+              {{ __('Customer Satisfaction') }}
          
         </li>
         

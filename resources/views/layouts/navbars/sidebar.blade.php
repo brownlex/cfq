@@ -7,7 +7,7 @@
   -->
     <div class="logo">
         <a href="#" class="simple-text logo-normal">
-            {{ __('Invoice System') }}
+            {{ __('Customer Satisfaction') }}
         </a>
     </div>
     <div class="sidebar-wrapper">
@@ -35,7 +35,13 @@
             <li class="nav-item{{ $activePage == 'invoices' ? ' active' : '' }}">
               <a class="nav-link" href="" >
                 <i class="material-icons">description</i>
-                <p>{{ __('Invoices') }}</p>
+                <p>{{ __('Tickets') }}</p>
+              </a>
+            </li>
+            <li class="nav-item{{ $activePage == 'invoices' ? ' active' : '' }}">
+              <a class="nav-link" href="" >
+                <i class="material-icons">assessment</i>
+                <p>{{ __('Reports') }}</p>
               </a>
             </li>
             <li class="nav-item {{ $activePage == 'profile' ? ' active' : '' }}">

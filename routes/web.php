@@ -13,6 +13,10 @@ use Illuminate\Support\Facades\Auth;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::group(['namespace' => 'App\Http\livewire'], function () {
+	Route::get('/live', 'Claim@render')->name('live');
+});
+
 
 Route::group(['namespace' => 'App\Http\Controllers'], function () {
 	Route::get('/', function () {
@@ -20,7 +24,10 @@ Route::group(['namespace' => 'App\Http\Controllers'], function () {
 	});
 
 	Auth::routes();
+	
 	Route::get('/home', 'HomeController@index')->name('home');
+	Route::get('/queue', 'LandingController@queue')->name('queue');
+	Route::get('/queueE', 'LandingController@queueE')->name('queueboard');
 	Route::get('/landing', 'LandingController@landing')->name('landing');
 	Route::get('/claim', 'LandingController@index')->name('claim');
 	Route::post('/client/create-step-one', 'LandingController@createStepOne')->name('client.create.step.one');
@@ -37,7 +44,6 @@ Route::group(['namespace' => 'App\Http\Controllers'], function () {
 	Route::get('/client/create-step-three', 'LandingController@createStepThree')->name('client.create.step.three');
 	Route::get('/vistor', 'LandingController@vistor')->name('vistor');
 	Route::get('/feedback', 'LandingController@feedback')->name('feedback');
-
 	Route::post('/feedback/create-step-one', 'LandingController@createStepOnef')->name('feedback.create.step.one');
 
 	Route::post('/vistor/create-step-one', 'LandingController@createStepOnev')->name('vistor.create.step.one');
@@ -50,6 +56,15 @@ Route::group(['namespace' => 'App\Http\Controllers'], function () {
 	Route::post('/vistor/create-step-two5', 'LandingController@createStepTwo5v')->name('vistor.create.step.two5');
 	Route::get('/vistor/create-step-two6', 'LandingController@createStepTwo6v')->name('vistor.create.step.two6');
 	
+	Route::get('/{idNumber}/claim', 'ClaimEnqController@claim')->name('claim.create.claim.ticket');
+	Route::get('/{idNumber}/med', 'ClaimEnqController@med')->name('claim.create.med.ticket');
+	Route::get('/{idNumber}/enq', 'ClaimEnqController@enq')->name('claim.create.enq.ticket');
+/*
+	Route::get('/{idNumber}/enq', 'VistorController@ceo')->name('visit.create.ceo.ticket');
+	Route::get('/{idNumber}/enq', 'VistorController@claim')->name('visit.create.ceo.ticket');
+	Route::get('/{idNumber}/enq', 'VistorController@claim')->name('visit.create.ceo.ticket');
+	Route::get('/{idNumber}/enq', 'VistorController@claim')->name('visit.create.ceo.ticket');
+	*/
 	//Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 
@@ -86,6 +101,11 @@ Route::group(['namespace' => 'App\Http\Controllers'], function () {
 			return view('pages.upgrade');
 		})->name('upgrade');
 		//});
+
+		Route::group(['prefix' => 'tickets'], function () {
+		Route::get('/display', 'HomeController@display')->name('tickets.display');
+		});
+
 
 		//Route::group(['middleware' => 'auth'], function () {
 		Route::resource('user', 'App\Http\Controllers\UserController', ['except' => ['show']]);

@@ -42,8 +42,10 @@
       21 => 'Illuminate\\View\\ViewServiceProvider',
       22 => 'App\\Providers\\AppServiceProvider',
       23 => 'App\\Providers\\AuthServiceProvider',
-      24 => 'App\\Providers\\EventServiceProvider',
-      25 => 'App\\Providers\\RouteServiceProvider',
+      24 => 'App\\Providers\\BroadcastServiceProvider',
+      25 => 'App\\Providers\\EventServiceProvider',
+      26 => 'App\\Providers\\RouteServiceProvider',
+      27 => 'yajra\\Datatables\\DatatablesServiceProvider',
     ),
     'aliases' => 
     array (
@@ -85,6 +87,7 @@
       'URL' => 'Illuminate\\Support\\Facades\\URL',
       'Validator' => 'Illuminate\\Support\\Facades\\Validator',
       'View' => 'Illuminate\\Support\\Facades\\View',
+      'Datatables' => 'yajra\\Datatables\\Datatables',
     ),
   ),
   'auth' => 
@@ -129,15 +132,15 @@
   ),
   'broadcasting' => 
   array (
-    'default' => 'log',
+    'default' => 'pusher',
     'connections' => 
     array (
       'pusher' => 
       array (
         'driver' => 'pusher',
-        'key' => '',
-        'secret' => '',
-        'app_id' => '',
+        'key' => 'd8f6db31232bcbcc283f',
+        'secret' => 'e83c9b4e3881cdb12099',
+        'app_id' => '1478302',
         'options' => 
         array (
           'host' => 'api-mt1.pusher.com',
@@ -359,6 +362,61 @@
       ),
     ),
   ),
+  'datatables' => 
+  array (
+    'search' => 
+    array (
+      'smart' => true,
+      'multi_term' => true,
+      'case_insensitive' => true,
+      'use_wildcards' => false,
+      'starts_with' => false,
+    ),
+    'index_column' => 'DT_RowIndex',
+    'engines' => 
+    array (
+      'eloquent' => 'Yajra\\DataTables\\EloquentDataTable',
+      'query' => 'Yajra\\DataTables\\QueryDataTable',
+      'collection' => 'Yajra\\DataTables\\CollectionDataTable',
+    ),
+    'builders' => 
+    array (
+    ),
+    'nulls_last_sql' => ':column :direction NULLS LAST',
+    'error' => NULL,
+    'columns' => 
+    array (
+      'excess' => 
+      array (
+        0 => 'rn',
+        1 => 'row_num',
+      ),
+      'escape' => '*',
+      'raw' => 
+      array (
+        0 => 'action',
+      ),
+      'blacklist' => 
+      array (
+        0 => 'password',
+        1 => 'remember_token',
+      ),
+      'whitelist' => '*',
+    ),
+    'json' => 
+    array (
+      'header' => 
+      array (
+      ),
+      'options' => 0,
+    ),
+    'callback' => 
+    array (
+      0 => '$',
+      1 => '$.',
+      2 => 'function',
+    ),
+  ),
   'filesystems' => 
   array (
     'default' => 'local',
@@ -396,6 +454,60 @@
       'C:\\xampp\\htdocs\\cfq\\public\\storage' => 'C:\\xampp\\htdocs\\cfq\\storage\\app/public',
     ),
   ),
+  'flare' => 
+  array (
+    'key' => NULL,
+    'flare_middleware' => 
+    array (
+      0 => 'Spatie\\FlareClient\\FlareMiddleware\\RemoveRequestIp',
+      1 => 'Spatie\\FlareClient\\FlareMiddleware\\AddGitInformation',
+      2 => 'Spatie\\LaravelIgnition\\FlareMiddleware\\AddNotifierName',
+      3 => 'Spatie\\LaravelIgnition\\FlareMiddleware\\AddEnvironmentInformation',
+      4 => 'Spatie\\LaravelIgnition\\FlareMiddleware\\AddExceptionInformation',
+      5 => 'Spatie\\LaravelIgnition\\FlareMiddleware\\AddDumps',
+      'Spatie\\LaravelIgnition\\FlareMiddleware\\AddLogs' => 
+      array (
+        'maximum_number_of_collected_logs' => 200,
+      ),
+      'Spatie\\LaravelIgnition\\FlareMiddleware\\AddQueries' => 
+      array (
+        'maximum_number_of_collected_queries' => 200,
+        'report_query_bindings' => true,
+      ),
+      'Spatie\\LaravelIgnition\\FlareMiddleware\\AddJobs' => 
+      array (
+        'max_chained_job_reporting_depth' => 5,
+      ),
+      'Spatie\\FlareClient\\FlareMiddleware\\CensorRequestBodyFields' => 
+      array (
+        'censor_fields' => 
+        array (
+          0 => 'password',
+          1 => 'password_confirmation',
+        ),
+      ),
+      'Spatie\\FlareClient\\FlareMiddleware\\CensorRequestHeaders' => 
+      array (
+        'headers' => 
+        array (
+          0 => 'API-KEY',
+        ),
+      ),
+    ),
+    'send_logs_as_events' => true,
+  ),
+  'fractal' => 
+  array (
+    'default_serializer' => '',
+    'default_paginator' => '',
+    'base_url' => NULL,
+    'fractal_class' => 'Spatie\\Fractal\\Fractal',
+    'auto_includes' => 
+    array (
+      'enabled' => true,
+      'request_key' => 'include',
+    ),
+  ),
   'hashing' => 
   array (
     'driver' => 'bcrypt',
@@ -409,6 +521,81 @@
       'threads' => 1,
       'time' => 4,
     ),
+  ),
+  'ignition' => 
+  array (
+    'editor' => 'phpstorm',
+    'theme' => 'auto',
+    'enable_share_button' => true,
+    'register_commands' => false,
+    'solution_providers' => 
+    array (
+      0 => 'Spatie\\Ignition\\Solutions\\SolutionProviders\\BadMethodCallSolutionProvider',
+      1 => 'Spatie\\Ignition\\Solutions\\SolutionProviders\\MergeConflictSolutionProvider',
+      2 => 'Spatie\\Ignition\\Solutions\\SolutionProviders\\UndefinedPropertySolutionProvider',
+      3 => 'Spatie\\LaravelIgnition\\Solutions\\SolutionProviders\\IncorrectValetDbCredentialsSolutionProvider',
+      4 => 'Spatie\\LaravelIgnition\\Solutions\\SolutionProviders\\MissingAppKeySolutionProvider',
+      5 => 'Spatie\\LaravelIgnition\\Solutions\\SolutionProviders\\DefaultDbNameSolutionProvider',
+      6 => 'Spatie\\LaravelIgnition\\Solutions\\SolutionProviders\\TableNotFoundSolutionProvider',
+      7 => 'Spatie\\LaravelIgnition\\Solutions\\SolutionProviders\\MissingImportSolutionProvider',
+      8 => 'Spatie\\LaravelIgnition\\Solutions\\SolutionProviders\\InvalidRouteActionSolutionProvider',
+      9 => 'Spatie\\LaravelIgnition\\Solutions\\SolutionProviders\\ViewNotFoundSolutionProvider',
+      10 => 'Spatie\\LaravelIgnition\\Solutions\\SolutionProviders\\RunningLaravelDuskInProductionProvider',
+      11 => 'Spatie\\LaravelIgnition\\Solutions\\SolutionProviders\\MissingColumnSolutionProvider',
+      12 => 'Spatie\\LaravelIgnition\\Solutions\\SolutionProviders\\UnknownValidationSolutionProvider',
+      13 => 'Spatie\\LaravelIgnition\\Solutions\\SolutionProviders\\MissingMixManifestSolutionProvider',
+      14 => 'Spatie\\LaravelIgnition\\Solutions\\SolutionProviders\\MissingViteManifestSolutionProvider',
+      15 => 'Spatie\\LaravelIgnition\\Solutions\\SolutionProviders\\MissingLivewireComponentSolutionProvider',
+      16 => 'Spatie\\LaravelIgnition\\Solutions\\SolutionProviders\\UndefinedViewVariableSolutionProvider',
+      17 => 'Spatie\\LaravelIgnition\\Solutions\\SolutionProviders\\GenericLaravelExceptionSolutionProvider',
+    ),
+    'ignored_solution_providers' => 
+    array (
+    ),
+    'enable_runnable_solutions' => true,
+    'remote_sites_path' => 'C:\\xampp\\htdocs\\cfq',
+    'local_sites_path' => '',
+    'housekeeping_endpoint_prefix' => '_ignition',
+    'settings_file_path' => '',
+  ),
+  'livewire' => 
+  array (
+    'class_namespace' => 'App\\Http\\Livewire',
+    'view_path' => 'C:\\xampp\\htdocs\\cfq\\resources\\views/livewire',
+    'layout' => 'layouts.app',
+    'asset_url' => NULL,
+    'app_url' => NULL,
+    'middleware_group' => 'web',
+    'temporary_file_upload' => 
+    array (
+      'disk' => NULL,
+      'rules' => NULL,
+      'directory' => NULL,
+      'middleware' => NULL,
+      'preview_mimes' => 
+      array (
+        0 => 'png',
+        1 => 'gif',
+        2 => 'bmp',
+        3 => 'svg',
+        4 => 'wav',
+        5 => 'mp4',
+        6 => 'mov',
+        7 => 'avi',
+        8 => 'wmv',
+        9 => 'mp3',
+        10 => 'm4a',
+        11 => 'jpg',
+        12 => 'jpeg',
+        13 => 'mpga',
+        14 => 'webp',
+        15 => 'wma',
+      ),
+      'max_upload_time' => 5,
+    ),
+    'manifest_path' => NULL,
+    'back_button_cache' => false,
+    'render_on_redirect' => false,
   ),
   'logging' => 
   array (
@@ -666,6 +853,12 @@
       'table' => 'failed_jobs',
     ),
   ),
+  'receiptprinter' => 
+  array (
+    'connector_type' => 'windows',
+    'connector_descriptor' => 'LPT1',
+    'connector_port' => 9100,
+  ),
   'sanctum' => 
   array (
     'stateful' => 
@@ -730,92 +923,6 @@
     'http_only' => true,
     'same_site' => 'lax',
   ),
-  'view' => 
-  array (
-    'paths' => 
-    array (
-      0 => 'C:\\xampp\\htdocs\\cfq\\resources\\views',
-    ),
-    'compiled' => 'C:\\xampp\\htdocs\\cfq\\storage\\framework\\views',
-  ),
-  'flare' => 
-  array (
-    'key' => NULL,
-    'flare_middleware' => 
-    array (
-      0 => 'Spatie\\FlareClient\\FlareMiddleware\\RemoveRequestIp',
-      1 => 'Spatie\\FlareClient\\FlareMiddleware\\AddGitInformation',
-      2 => 'Spatie\\LaravelIgnition\\FlareMiddleware\\AddNotifierName',
-      3 => 'Spatie\\LaravelIgnition\\FlareMiddleware\\AddEnvironmentInformation',
-      4 => 'Spatie\\LaravelIgnition\\FlareMiddleware\\AddExceptionInformation',
-      5 => 'Spatie\\LaravelIgnition\\FlareMiddleware\\AddDumps',
-      'Spatie\\LaravelIgnition\\FlareMiddleware\\AddLogs' => 
-      array (
-        'maximum_number_of_collected_logs' => 200,
-      ),
-      'Spatie\\LaravelIgnition\\FlareMiddleware\\AddQueries' => 
-      array (
-        'maximum_number_of_collected_queries' => 200,
-        'report_query_bindings' => true,
-      ),
-      'Spatie\\LaravelIgnition\\FlareMiddleware\\AddJobs' => 
-      array (
-        'max_chained_job_reporting_depth' => 5,
-      ),
-      'Spatie\\FlareClient\\FlareMiddleware\\CensorRequestBodyFields' => 
-      array (
-        'censor_fields' => 
-        array (
-          0 => 'password',
-          1 => 'password_confirmation',
-        ),
-      ),
-      'Spatie\\FlareClient\\FlareMiddleware\\CensorRequestHeaders' => 
-      array (
-        'headers' => 
-        array (
-          0 => 'API-KEY',
-        ),
-      ),
-    ),
-    'send_logs_as_events' => true,
-  ),
-  'ignition' => 
-  array (
-    'editor' => 'phpstorm',
-    'theme' => 'auto',
-    'enable_share_button' => true,
-    'register_commands' => false,
-    'solution_providers' => 
-    array (
-      0 => 'Spatie\\Ignition\\Solutions\\SolutionProviders\\BadMethodCallSolutionProvider',
-      1 => 'Spatie\\Ignition\\Solutions\\SolutionProviders\\MergeConflictSolutionProvider',
-      2 => 'Spatie\\Ignition\\Solutions\\SolutionProviders\\UndefinedPropertySolutionProvider',
-      3 => 'Spatie\\LaravelIgnition\\Solutions\\SolutionProviders\\IncorrectValetDbCredentialsSolutionProvider',
-      4 => 'Spatie\\LaravelIgnition\\Solutions\\SolutionProviders\\MissingAppKeySolutionProvider',
-      5 => 'Spatie\\LaravelIgnition\\Solutions\\SolutionProviders\\DefaultDbNameSolutionProvider',
-      6 => 'Spatie\\LaravelIgnition\\Solutions\\SolutionProviders\\TableNotFoundSolutionProvider',
-      7 => 'Spatie\\LaravelIgnition\\Solutions\\SolutionProviders\\MissingImportSolutionProvider',
-      8 => 'Spatie\\LaravelIgnition\\Solutions\\SolutionProviders\\InvalidRouteActionSolutionProvider',
-      9 => 'Spatie\\LaravelIgnition\\Solutions\\SolutionProviders\\ViewNotFoundSolutionProvider',
-      10 => 'Spatie\\LaravelIgnition\\Solutions\\SolutionProviders\\RunningLaravelDuskInProductionProvider',
-      11 => 'Spatie\\LaravelIgnition\\Solutions\\SolutionProviders\\MissingColumnSolutionProvider',
-      12 => 'Spatie\\LaravelIgnition\\Solutions\\SolutionProviders\\UnknownValidationSolutionProvider',
-      13 => 'Spatie\\LaravelIgnition\\Solutions\\SolutionProviders\\MissingMixManifestSolutionProvider',
-      14 => 'Spatie\\LaravelIgnition\\Solutions\\SolutionProviders\\MissingViteManifestSolutionProvider',
-      15 => 'Spatie\\LaravelIgnition\\Solutions\\SolutionProviders\\MissingLivewireComponentSolutionProvider',
-      16 => 'Spatie\\LaravelIgnition\\Solutions\\SolutionProviders\\UndefinedViewVariableSolutionProvider',
-      17 => 'Spatie\\LaravelIgnition\\Solutions\\SolutionProviders\\GenericLaravelExceptionSolutionProvider',
-    ),
-    'ignored_solution_providers' => 
-    array (
-    ),
-    'enable_runnable_solutions' => true,
-    'remote_sites_path' => 'C:\\xampp\\htdocs\\cfq',
-    'local_sites_path' => '',
-    'housekeeping_endpoint_prefix' => '_ignition',
-    'settings_file_path' => '',
-  ),
   'tinker' => 
   array (
     'commands' => 
@@ -828,5 +935,81 @@
     array (
       0 => 'App\\Nova',
     ),
+  ),
+  'view' => 
+  array (
+    'paths' => 
+    array (
+      0 => 'C:\\xampp\\htdocs\\cfq\\resources\\views',
+    ),
+    'compiled' => 'C:\\xampp\\htdocs\\cfq\\storage\\framework\\views',
+  ),
+  'webpush' => 
+  array (
+    'vapid' => 
+    array (
+      'subject' => NULL,
+      'public_key' => NULL,
+      'private_key' => NULL,
+      'pem_file' => NULL,
+    ),
+    'model' => 'NotificationChannels\\WebPush\\PushSubscription',
+    'table_name' => 'push_subscriptions',
+    'database_connection' => 'mysql',
+    'client_options' => 
+    array (
+    ),
+    'gcm' => 
+    array (
+      'key' => NULL,
+      'sender_id' => NULL,
+    ),
+  ),
+  'websockets' => 
+  array (
+    'dashboard' => 
+    array (
+      'port' => 6001,
+    ),
+    'apps' => 
+    array (
+      0 => 
+      array (
+        'id' => '1478302',
+        'name' => 'CFQ System',
+        'key' => 'd8f6db31232bcbcc283f',
+        'secret' => 'e83c9b4e3881cdb12099',
+        'path' => NULL,
+        'capacity' => NULL,
+        'enable_client_messages' => false,
+        'enable_statistics' => true,
+      ),
+    ),
+    'app_provider' => 'BeyondCode\\LaravelWebSockets\\Apps\\ConfigAppProvider',
+    'allowed_origins' => 
+    array (
+    ),
+    'max_request_size_in_kb' => 250,
+    'path' => 'laravel-websockets',
+    'middleware' => 
+    array (
+      0 => 'web',
+      1 => 'BeyondCode\\LaravelWebSockets\\Dashboard\\Http\\Middleware\\Authorize',
+    ),
+    'statistics' => 
+    array (
+      'model' => 'BeyondCode\\LaravelWebSockets\\Statistics\\Models\\WebSocketsStatisticsEntry',
+      'logger' => 'BeyondCode\\LaravelWebSockets\\Statistics\\Logger\\HttpStatisticsLogger',
+      'interval_in_seconds' => 60,
+      'delete_statistics_older_than_days' => 60,
+      'perform_dns_lookup' => false,
+    ),
+    'ssl' => 
+    array (
+      'local_cert' => NULL,
+      'local_pk' => NULL,
+      'passphrase' => NULL,
+    ),
+    'channel_manager' => 'BeyondCode\\LaravelWebSockets\\WebSockets\\Channels\\ChannelManagers\\ArrayChannelManager',
   ),
 );

@@ -19,17 +19,17 @@
             <br>
             <div class="row">
                 <div class="col-md-4 text-center">
-                    <a href="<?php echo e(route('landing')); ?>" class="btn btn-info "><h3>Submit Claim<br><i
+                    <a href="<?php echo e(route('claim.create.claim.ticket', $client->idNumber)); ?>" class="btn btn-info "><h3>Submit Claim<br><i
                             class="material-icons">post_add</i></h3></a>
                 </div>
 
                 <div class="col-md-4 text-center">
-                    <a href="<?php echo e(route('landing')); ?>" class="btn btn-info"><h3>Medical Provider<br><i
+                    <a href="<?php echo e(route('claim.create.med.ticket', $client->idNumber)); ?>" class="btn btn-info"><h3>Medical Provider<br><i
                             class="material-icons">medical_services</i></h3></a>
                 </div>
 
                 <div class="col-md-4 text-center">
-                    <a href="<?php echo e(route('landing')); ?>" class="btn btn-info"><h3>Enquiry  ?<br><i
+                    <a href="<?php echo e(route('claim.create.enq.ticket', $client->idNumber)); ?>" class="btn btn-info"><h3>Enquiry  ?<br><i
                             class="material-icons">psychology_alt</i></h3></a>
                 </div>
             </div>

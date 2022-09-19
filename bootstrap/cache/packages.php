@@ -1,9 +1,38 @@
 <?php return array (
+  'beyondcode/laravel-websockets' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'BeyondCode\\LaravelWebSockets\\WebSocketsServiceProvider',
+    ),
+    'aliases' => 
+    array (
+      'WebSocketRouter' => 'BeyondCode\\LaravelWebSockets\\Facades\\WebSocketRouter',
+    ),
+  ),
+  'charlieuki/receiptprinter' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'charlieuki\\ReceiptPrinter\\ReceiptPrinterServiceProvider',
+    ),
+    'aliases' => 
+    array (
+      'ReceiptPrinter' => 'charlieuki\\ReceiptPrinter\\Facades\\ReceiptPrinter',
+    ),
+  ),
   'laravel-frontend-presets/material-dashboard' => 
   array (
     'providers' => 
     array (
       0 => 'LaravelFrontendPresets\\MaterialPreset\\MaterialPresetServiceProvider',
+    ),
+  ),
+  'laravel-notification-channels/webpush' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'NotificationChannels\\WebPush\\WebPushServiceProvider',
     ),
   ),
   'laravel/legacy-factories' => 
@@ -53,6 +82,17 @@
       'Html' => 'Collective\\Html\\HtmlFacade',
     ),
   ),
+  'livewire/livewire' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Livewire\\LivewireServiceProvider',
+    ),
+    'aliases' => 
+    array (
+      'Livewire' => 'Livewire\\Livewire',
+    ),
+  ),
   'nesbot/carbon' => 
   array (
     'providers' => 
@@ -65,6 +105,17 @@
     'providers' => 
     array (
       0 => 'NunoMaduro\\Collision\\Adapters\\Laravel\\CollisionServiceProvider',
+    ),
+  ),
+  'spatie/laravel-fractal' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Spatie\\Fractal\\FractalServiceProvider',
+    ),
+    'aliases' => 
+    array (
+      'Fractal' => 'Spatie\\Fractal\\Facades\\Fractal',
     ),
   ),
   'spatie/laravel-ignition' => 
@@ -83,6 +134,17 @@
     'providers' => 
     array (
       0 => 'Spatie\\Permission\\PermissionServiceProvider',
+    ),
+  ),
+  'yajra/laravel-datatables-oracle' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Yajra\\DataTables\\DataTablesServiceProvider',
+    ),
+    'aliases' => 
+    array (
+      'DataTables' => 'Yajra\\DataTables\\Facades\\DataTables',
     ),
   ),
 );

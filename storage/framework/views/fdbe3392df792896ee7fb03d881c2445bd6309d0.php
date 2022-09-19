@@ -7,7 +7,7 @@
   -->
     <div class="logo">
         <a href="#" class="simple-text logo-normal">
-            <?php echo e(__('Invoice System')); ?>
+            <?php echo e(__('Customer Satisfaction')); ?>
 
         </a>
     </div>
@@ -36,7 +36,13 @@
             <li class="nav-item<?php echo e($activePage == 'invoices' ? ' active' : ''); ?>">
               <a class="nav-link" href="" >
                 <i class="material-icons">description</i>
-                <p><?php echo e(__('Invoices')); ?></p>
+                <p><?php echo e(__('Tickets')); ?></p>
+              </a>
+            </li>
+            <li class="nav-item<?php echo e($activePage == 'invoices' ? ' active' : ''); ?>">
+              <a class="nav-link" href="" >
+                <i class="material-icons">assessment</i>
+                <p><?php echo e(__('Reports')); ?></p>
               </a>
             </li>
             <li class="nav-item <?php echo e($activePage == 'profile' ? ' active' : ''); ?>">

@@ -5,7 +5,7 @@
         <div class="row justify-content-center">
             <div class="col-lg-7 col-md-8">
                 <h1 class="text-white text-center " style="color: #fff !important;"><i
-                    class="material-icons">looks_3</i><?php echo e(__(' Enter Your Last Name')); ?></h1>
+                    class="material-icons">looks_3</i><?php echo e(__(' Enter Your Last Name:')); ?></h1>
             </div>
 
         </div>

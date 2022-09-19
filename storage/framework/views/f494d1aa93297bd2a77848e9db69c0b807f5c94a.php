@@ -65,7 +65,7 @@
         <!-- Library for adding dinamically elements -->
         <script src="<?php echo e(asset('material')); ?>/js/plugins/arrive.min.js"></script>
         <!--  Google Maps Plugin    -->
-        <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE'"></script>
+       <!-- <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE'"></script> -->
         <!-- Chartist JS -->
         <script src="<?php echo e(asset('material')); ?>/js/plugins/chartist.min.js"></script>
         <!--  Notifications Plugin    -->
@@ -75,6 +75,7 @@
         <!-- Material Dashboard DEMO methods, don't include it in your project! -->
         <script src="<?php echo e(asset('material')); ?>/demo/demo.js"></script>
         <script src="<?php echo e(asset('material')); ?>/js/settings.js"></script>
+        <script src="<?php echo e(asset('js/app.js')); ?>"></script>
         <?php echo $__env->yieldPushContent('js'); ?>
     </body>
 </html><?php /**PATH C:\xampp\htdocs\cfq\resources\views/layouts/app.blade.php ENDPATH**/ ?>
